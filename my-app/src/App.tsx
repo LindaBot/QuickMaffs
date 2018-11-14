@@ -5,10 +5,6 @@ import QuestionField from './components/QuestionField';
 import './App.css';
 import './style.css'
 
-
-
-
-
 interface IState{
   operator: string,
   operatorSelected: boolean
