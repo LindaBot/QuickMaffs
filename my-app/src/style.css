@@ -1,0 +1,14 @@
+.questionFieldContainer{
+    background-color: red;
+    text-align: center;
+}
+
+#question{
+    font-size: 72px;
+}
+
+input[type="number"]{
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+    -moz-appearance:textfield !important;
+}
