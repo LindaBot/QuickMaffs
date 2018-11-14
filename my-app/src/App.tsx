@@ -30,17 +30,25 @@ class App extends React.Component<any, IState>{
     });
   }
 
+
+
   public render() {
-    return(
-      <div>
-        <OperatorSelect onOperatorSelected={this.state.operatorSelected}/>
+    const operatorSelected = this.state.operatorSelected
+    if (operatorSelected){
+      return(
+        <div>
+          
+          <div className="questionFieldContainer">
+            <QuestionField operator={this.state.operator}/>
+          </div>
 
-        <div className="questionFieldContainer">
-          <QuestionField operator={this.state.operator}/>
         </div>
-
-      </div>
-    );
+      );
+    } else {
+      return(
+        <OperatorSelect onOperatorSelected={this.onOperatorSelected}/>
+      )
+    }
   }
 }
 

@@ -4,7 +4,6 @@ import '../style.css'
 
 interface IState{
     answer: number,
-    hidden: boolean,
     num1: number,
     num2: number,
     points: number,
@@ -16,7 +15,6 @@ export default class QuestionField extends React.Component<any, IState>{
         super(props);
         this.state = {
             answer: 0,
-            hidden: true,
             num1: Math.round(Math.random()*500),
             num2: Math.round(Math.random()*500),
             points: 0,
